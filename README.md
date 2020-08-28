@@ -9,12 +9,12 @@
     import "fmt" // the Module used import like Python
 
     func main() {  // Main function as in C/C++
-    	fmt.Println("Hello, 世界") // Prints String , no semi colon required
+    	fmt.Println("Hello, World") // Prints String , no semi colon required
     }
 
     // output :
 
-    // Hello, 世界
+    // Hello, World
     // Program exited.
     ```
 
@@ -42,3 +42,15 @@
 
 3. Printing: </br>
     The most Common printing in Golang will be  ```%v, %T, %t, %s``` which stands for ```value, boolean, type, string```. As sample programme below explains:
+    ```golang
+    func main() {
+	    x := 12
+	    y := "Hello"
+	    z := false
+    fmt.Printf("%v, %T, %t", x, y, z)
+    
+    // output:
+    // 12, string, false
+    // Program exited.
+    }
+    ```
