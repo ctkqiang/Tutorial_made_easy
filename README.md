@@ -48,6 +48,21 @@
 
    Both of Specific declared and Automatically declared variable gave the same output value of `i` which equals to `12`.
 
+   Cluster ```var``` declaration can be made by simply place all values in a ``` 'var()' ```.
+
+   ```golang
+   var (
+       name string = "This is a Name"
+       number int = 12
+   )
+
+   func main() {
+       fmt.Printf("%v, %s", number, name)
+   }
+   ```
+
+
+
 3. Printing: </br>
    The most Common printing in Golang will be `%v, %T, %t, %s` which stands for `value, boolean, type, string`. As sample programme below explains:
 
