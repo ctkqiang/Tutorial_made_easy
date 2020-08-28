@@ -132,3 +132,12 @@
     // The value is  23
     //string
     ```
+5. Primitives: </br>
+   a. Boolean
+
+   ```golang
+   func main() {
+       var b bool = true
+       fmt.Printf("%t, %T \n", b, b)
+   }
+   ``` 
