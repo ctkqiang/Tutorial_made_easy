@@ -59,6 +59,10 @@
    func main() {
        fmt.Printf("%v, %s", number, name)
    }
+
+   // output:
+   // 12, This is a Name
+   // Program exited.
    ```
 
 
@@ -78,3 +82,53 @@
    // Program exited.
    }
    ```
+
+
+4. Type Conversion: </br>
+   a. ```int/int64``` to ```string```
+   ```golang
+    package main
+
+    import (
+	    "fmt"
+	    "strconv"
+    )
+
+    var (
+	    a int    = 12
+	    s string = strconv.Itoa(a)
+    )
+
+    func main() {
+    fmt.Printf("%s, %T", s, s)
+    }
+
+    // output is ` 12, string `.
+    ```
+
+    b. ```string```1 to ```int/int64```
+    ```golang
+    package main
+
+    import (
+	    "fmt"
+	    "strconv"
+    )
+
+    var (
+	    s string = "23"
+    )
+
+    func main() {
+	    if n, err := strconv.Atoi(s); err == nil {
+		    fmt.Println("The value is ", n)
+		    fmt.Printf("%T", s)
+	    } else {
+		    fmt.Println(s, " is not an integer.")
+	    }
+    }
+
+    // output
+    // The value is  23
+    //string
+    ```
