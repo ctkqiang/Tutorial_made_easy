@@ -140,4 +140,7 @@
        var b bool = true
        fmt.Printf("%t, %T \n", b, b)
    }
+
+   // output 
+   // true, boolean
    ``` 
