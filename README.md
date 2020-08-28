@@ -7,7 +7,7 @@
 1. Hello World Programme:</br>
 
    ```golang
-// the name of the package as "Java-like"
+   // the name of the package as "Java-like"
    package main
    // the Module used import like Python
    import "fmt"
